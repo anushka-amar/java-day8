@@ -22,7 +22,7 @@ public class Maximum {
 
     public static void main(String[] args) {
         Float a = 50.20f;
-        Float b = 50.15f;
+        Float b = 50.35f;
         Float c = 50.06f;
 
         System.out.println("The maximum out of the three float type is "+find_max(a,b,c));
