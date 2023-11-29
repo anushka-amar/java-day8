@@ -19,12 +19,22 @@ public class Maximum {
         }
         return max;
     }
+    public static String find_max(String x, String y, String z){
+        String max = x;
+        if(y.compareTo(max)>0){
+            max = y;
+        }
+        if(z.compareTo(max)>0){
+            max = z;
+        }
+        return max;
+    }
 
     public static void main(String[] args) {
-        Float a = 50.20f;
-        Float b = 50.35f;
-        Float c = 50.75f;
+        String x = "Orange";
+        String y = "Apple";
+        String z = "Banana";
 
-        System.out.println("The maximum out of the three float type is "+find_max(a,b,c));
+        System.out.println("The max out of the three strings lexicographically is "+find_max(x,y,z));
     }
 }
