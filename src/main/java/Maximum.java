@@ -9,12 +9,22 @@ public class Maximum {
         }
         return max;
     }
+    public static Float find_max(Float x, Float y, Float z){
+        Float max = x;
+        if(y.compareTo(max)>0){
+            max = y;
+        }
+        if(z.compareTo(max)>0){
+            max = z;
+        }
+        return max;
+    }
 
     public static void main(String[] args) {
-        Integer x = 50;
-        Integer y = 75;
-        Integer z = 600;
+        Float a = 50.20f;
+        Float b = 50.15f;
+        Float c = 50.06f;
 
-        System.out.println("The maximum out of the three integer is "+find_max(x,y,z));
+        System.out.println("The maximum out of the three float type is "+find_max(a,b,c));
     }
 }
