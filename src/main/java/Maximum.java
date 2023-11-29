@@ -1,4 +1,17 @@
-public class Maximum {
+public class Maximum <T extends Comparable<T>>{
+
+    private T x, y, z;
+
+    public Maximum(T x, T y, T z){
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
+
+    public T testMaximum (){
+        T res = Maximum.find_max(x,y,z);
+        return res;
+    }
 
     public static <T extends Comparable<T>> T find_max(T x, T y, T z){
         T max = x;
@@ -10,13 +23,5 @@ public class Maximum {
         }
         return max;
     }
-
-
-
-    public static void main(String[] args) {
-
-        System.out.println("The max out of the three integer type number is "+find_max(75, 50, 55));
-        System.out.println("The max out of the three float type number is "+find_max(50.45f, 50.75f, 50.5f));
-        System.out.println("The max out of the three strings lexicographically is "+find_max("Orange", "Peach", "PineApple"));
-    }
+    
 }
