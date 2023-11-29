@@ -23,5 +23,5 @@ public class Maximum <T extends Comparable<T>>{
         }
         return max;
     }
-    
+
 }
