@@ -33,7 +33,7 @@ public class Maximum {
     public static void main(String[] args) {
         String x = "Orange";
         String y = "Peach";
-        String z = "Banana";
+        String z = "pineapple";
 
         System.out.println("The max out of the three strings lexicographically is "+find_max(x,y,z));
     }
