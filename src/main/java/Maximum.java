@@ -12,8 +12,8 @@ public class Maximum {
 
     public static void main(String[] args) {
         Integer x = 50;
-        Integer y = 15;
-        Integer z = 25;
+        Integer y = 75;
+        Integer z = 60;
 
         System.out.println("The maximum out of the three integer is "+find_max(x,y,z));
     }
